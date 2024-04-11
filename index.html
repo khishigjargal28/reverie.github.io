@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="visual.css">
+        <title>Homepage Reverie</title>
+    </head>
+    <body>
+        <div class="banner">
+        </div>
+        <div class="content-container">
+
+            <nav>
+                <a href="index.html"><u>Home</u></a> |
+                <a href="projects.html">Projects</a> |
+                <a href="about_us.html">About us</a> |
+                <a href="contact_us.html">Contact us</a>
+            </nav>
+            <button onclick="toggleVisualImpairment()">Toggle Higher Contrast</button>
+
+            <script>
+                function toggleVisualImpairment() {
+                document.body.classList.toggle('visually-impaired');
+                }
+
+            </script>
+            <h1>We are Reverie.</h1>
+            <section>
+            <h2>Transforming spaces, inspiring lives.</h2>
+            <div class="justify-text">
+                <p>Welcome to our interior design studio, where we’ve <b>mastered the art of combining aesthetics and functionality</b> over two successful decades in the industry. Specializing in residential projects, our expertise spans across national and international borders, with a rich portfolio showcasing nationwide projects throughout Europe and the UK. Notably, our commitment to a excellence and innovation has been recognized on the global stage, as we are honoured with <i>SBID International Design Awards</i> and have secured a finalist position in the <i>UNxDESIGN Awards</i>.</p>
+                <p>Explore our <u><a href="projects.html">portfolio</a></u> and <u><a href="contact_us.html">contact us</a></u> to get started on your home renovation journey. </p>
+            </div>
+            </section>
+            <section>
+                <h2>Our works</h2>
+            <div class="grid-container" id="gridContainer"></div>
+
+            <script>
+                // Image sources
+                const imageSources = [
+                    "pictures/intro.jpg",
+                    "pictures/intro1.jpg",
+                    "pictures/intro6.jpg",
+                    "pictures/intro2.jpg",
+                    "pictures/intro4.jpg",
+                    "pictures/intro5.jpg"
+                ];
+
+                const gridContainer = document.getElementById("gridContainer");
+
+                imageSources.forEach(src => {
+                    const gridItem = document.createElement("div");
+                    gridItem.classList.add("grid-item");
+
+                    const img = document.createElement("img");
+                    img.src = src;
+                    img.alt = "interior";
+                    img.classList.add("rounded");
+
+                    gridItem.appendChild(img);
+                    gridContainer.appendChild(gridItem);
+                });
+            </script>
+            </section>
+            <hr>
+            <section>
+            <h2>Customers' reviews</h2>
+            <p><b>Client: Millie M <br> Project: Apartment in Barcelona, Spain <br> Type: Residential <br>Project area: 2560 sq.m</b></p>
+            <p><i>"We recently hired Reverie to renovate our apartment in Barcelona, Spain and we are extremely happy with the results. The team was professional, responsive, and had a great eye for design. They listened to our ideas and incorporated them into the final design, while also offering their own creative suggestions. The renovation process was smooth and efficient, and the end result exceeded our expectations. The new design has transformed our apartment into a stylish and comfortable space that we are proud to call home. We highly recommend Reverie studio to anyone looking for high-quality, professional interior design services."</i></p>
+
+            <p><b>Client: Sarah S <br> Project: Apartment in Budapest, Hungary <br> Type: Residential<br>Project area: 3300 sq.m</b></p>
+            <p><i>"I've had the pleasure of working with Reverie for the second time, and I'm consistently impressed by their high level of professionalism and meticulous attention to detail. Recently, my family of three enlisted their expertise to design our apartment, and we are absolutely delighted with the final result. The newly renovated bathroom is a standout feature in their design work. Reverie carefully heeded our needs, incorporating all the elements we desired to create a space that is both functional and visually stunning. I highly recommend Reverie to anyone in search of interior design services. They possess a genuine talent for understanding their clients' requirements and bringing their visions to life. Once again, I extend my gratitude for an exceptional job!"</i></p>
+            </section>
+            <hr>
+            <br>
+            <aside><b>DISCLAIMER:</b> This website was made for the university course "Web development". The company is not real and no image or video is owned by me. Photos are used from <a href="https://themanifest.com/company/arsight" target="_blank">Arsight</a> and the video is from <a href="https://www.youtube.com/watch?v=_y4cqMMlO9g&ab_channel=IADesign " target="_blank">IADesign</a>.</aside>
+            <br>
+        </div>
+        <footer>
+            <p>&copy; 2023 Reverie. All rights reserved. | <a href="https://www.facebook.com/" target="_blank">Privacy Policy</a> | <a href="https://www.instagram.com/" target="_blank">Terms of Service</a></p>           
+            <p><a href="mailto:reverie@int.com">Contact: reverie@int.com</a></p>
+        </footer>
+    </body>
+</html>
