@@ -1,0 +1,19 @@
+body.visually-impaired {
+    font-size: 1.2em; 
+    color: #fff; 
+    background-color: #000; 
+    
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; 
+}

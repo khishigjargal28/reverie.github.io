@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="visual.css">
+        <title>Projects</title>
+    </head>
+    <body>
+        <div class="banner"></div>
+            <div class="content-container">
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="projects.html"><u>Projects</u></a> |
+                <a href="about_us.html">About us</a> |
+                <a href="contact_us.html">Contact us</a>
+            </nav>
+            <button onclick="toggleVisualImpairment()">Toggle Higher Contrast</button>
+
+            <script>
+                function toggleVisualImpairment() {
+                document.body.classList.toggle('visually-impaired');
+                }
+
+            </script>
+            <a href="#main-content" class="skip-link">Skip to main content</a>
+            <h1>Our portfolio</h1>
+            <div class="justify-text">
+                <p><i>We have rich experiences of designing and completing 20 years of projects. We will listen to your needs and incorporate all of the features you desire, creating a space that is both functional and visually stunning. We won’t miss even the tiniest details.</i></p>
+            </div>            
+            <br>
+            <h2>Kitchen</h2>
+        
+        <main id="main-content">
+        <div class="grid-container" id="gridContainer"> </div>
+            <script>
+                // Image sources
+                const imageSources = [
+                    "kitchen/kitchen3.jpg",
+                    "kitchen/kitchen2.jpg",
+                    "kitchen/kitchen1.jpg",
+                    "kitchen/kitchen4.jpg"
+                ];
+
+                const gridContainer = document.getElementById("gridContainer");
+
+                imageSources.forEach(src => {
+                    const gridItem = document.createElement("div");
+                    gridItem.classList.add("grid-item");
+
+                    const img = document.createElement("img");
+                    img.src = src;
+                    img.alt = "interior";
+                    img.classList.add("rounded");
+
+                    gridItem.appendChild(img);
+                    gridContainer.appendChild(gridItem);
+                });
+            </script>
+        </div>
+        </main>
+        <br>
+        <footer>
+            <p>&copy; 2023 Reverie. All rights reserved. | <a href="https://www.facebook.com/" target="_blank">Privacy Policy</a> | <a href="https://www.instagram.com/" target="_blank">Terms of Service</a></p>            
+            <p><a href="mailto:reverie@int.com">Contact: reverie@int.com</a></p>
+        </footer>
+    </body>
+</html>
