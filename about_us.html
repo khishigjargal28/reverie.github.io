@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet" href="visual.css">
+    
+    <!-- <style>
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url('pictures/homepage1.jpg'); 
+            background-size: cover;
+            background-position: center; 
+            padding: 100px;
+            color: white;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 0 0 0; 
+            padding: 0;
+            overflow: hidden;
+        }
+        nav {
+            background-color: white;
+            padding: 5px;
+            text-align: right;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 5px;
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        main {
+            padding: 10px;
+        }
+        
+    </style> -->
+    
+    <title>About us</title>
+</head>
+<body>
+    <div class="banner" img src="pictures/homepage2.jpg" alt="">
+    </div>
+    <!-- <img src="pictures/logo.png" alt="logo" class="logo" height="150"> -->
+    <div class="content-container">
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="about_us.html"><u>About us</u></a> |
+        <a href="contact_us.html">Contact us</a>
+    </nav>
+    <button onclick="toggleVisualImpairment()">Toggle Higher Contrast</button>
+
+            <script>
+                function toggleVisualImpairment() {
+                document.body.classList.toggle('visually-impaired');
+                }
+
+            </script>
+    <header>
+    </header>
+    <main>
+        <h2>Welcome to Reverie: we create design that resonates and shape spaces that reflect your individual story. Join us as we redefine boundaries and reimagine what your space can be.</h2>
+        <section>
+        <h3>About Reverie</h3>
+        <article>
+            <div class="justify-text">
+                <p>Reverie, based in Budapest and founded by interior designer Nomi Amgaa, has a decade of extensive and global residential and commercial interior design experience. Connecting a collaborative team of passionate professionals, the studio has worked on projects nationwide and worldwide, adhering to the principle that a truly creative mind can only consist of extensive experience combined with relentless growth and exploration.</p>
+            </div>
+        </article>
+        </section>
+        <section>
+        <h3>Our history</h3>
+        <table caption="This table shows our past achievements in chronological order.">
+            <caption>Our achievements</caption>
+            <tr>
+                <th scope="col">Year</th>
+                <th scope="col">Event</th>
+                <th scope="col">Place</th>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>Founded by Nomi Amgaa</td>
+                <td>Budapest</td>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>Got SBID International Design Awards</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>UNxDESIGN Awards</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+        </section>
+        <section>
+        <h3>Why us?</h3>
+        <video width=100% poster="poster.jpg" controls>
+            <source src="ia.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </section>
+        <br>
+        <aside>Ready to experience our blend of style, innovation, and efficiency? <u><a href="contact_us.html">Contact us</a></u> now for a discovery call. Let's discuss your project, guide you through our process, and start transforming your space today.</aside>
+        <hr>
+    </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Reverie. All rights reserved. | <a href="https://www.facebook.com/" target="_blank">Privacy Policy</a> | <a href="https://www.instagram.com/" target="_blank">Terms of Service</a></p>        <p><a href="mailto:reverie@int.com">Contact: reverie@int.com</a></p>
+    </footer>
+</body>
+</html>
